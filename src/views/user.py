@@ -23,6 +23,6 @@ def add_user_view():
         return make_response(jsonify({"status": "bad request"}), 400)
 
     user_name = data["user_name"]
-    print(user_name)
+
     add_user(user_name)
     return make_response(jsonify({"status": "success"}), 200)
